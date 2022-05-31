@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# Author - Tolulope Fakunle
-for letter in range(97, 123):
-    if chr(letter) != 'q' and chr(letter) != 'e':
-        print("{}".format(chr(letter)), end="")
-        
+for chr in "abcdefghijklmnopqrstuvwxyz":
+    if chr == "q" or chr == "e":
+        continue
+    print('{}'.format(chr), end="")
