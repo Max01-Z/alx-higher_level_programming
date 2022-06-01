@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-for chr in "abcdefghijklmnopqrstuvwxyz":
-    if chr == "q" or chr == "e":
+for i in range(ord('a'), ord('z') + 1):
+    if chr(i) == 'e' or chr(i) == 'q':
         continue
-    print('{}'.format(chr), end="")
+    else:
+        print("{:s}".format(chr(i)), end="")
+        
